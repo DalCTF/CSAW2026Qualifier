@@ -1,10 +1,4 @@
----
-aliases:
-- "CSAW 2026 Qualifier: The Vantage Job"
-- "CSAW 2026 Qualifier: The Vantage Job"
----
-
-> \[!The Vantage Job\]
+# The Vantage Job 
 > "Three nights ago, Solenne & Vane, a private auction house in Geneva, was robbed of a hardware wallet holding the keys to a dormant 340 BTC wallet, once seized in a fraud case and quietly re-listed for a closed-bid sale. No forced entry. No alarms. Interpol's cybercrime liaison is out of leads through official channels, which is why you've been brought in.
 >
 > One thing is certain: the person behind this can't resist bragging.
