@@ -26,23 +26,11 @@ My next idea was to put the PDF file into a my preferred online PDF analysis too
 
 I then used pdfimages on the file, and sure enough, there was a plain white image embedded in it.
 
-<figure>
-<img
-src="imgs/b71910aa6f8e72ea79caa6e245e06ba3898383a3.png"
-class="wikilink" alt="Pastedimage20260919143039.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919143039.png</figcaption>
-</figure>
+![Pastedimage20260919143039.png](imgs/b71910aa6f8e72ea79caa6e245e06ba3898383a3.png)
 
 Now that I had the image extracted, I was able to put it into CyberChef to extract the bitmap, revealing any slightly off-colour sections. And, there it was: the next clue in the puzzle.
 
-<figure>
-<img
-src="imgs/5d1a05e9f5aca1e65e1af65c842ce088511dfff9.png"
-class="wikilink" alt="Pastedimage20260919143316.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919143316.png</figcaption>
-</figure>
+![Pastedimage20260919143316.png](imgs/5d1a05e9f5aca1e65e1af65c842ce088511dfff9.png)
 
 > "A bot has no thumb, no whorls, no line.
 > yet it wears one word as a secret sign
@@ -78,23 +66,11 @@ what about.. **A DISCORD BOT?**
 
 But how could I find this Discord bot? well, looking back at the initial prompt for the CTF, it mentioned the hackers name is "*Ferryman*". so perhaps there is a Discord bot somewhere named *Ferryman* that I can message? so I checked the official CSAW 2026 CTF discord server, and lo and behold, there it was, hidden deep in the user list, an account with the APP tag named Ferryman!
 
-<figure>
-<img
-src="imgs/b7ccafe408827bff84e3ce705fa50cfa755beea6.png"
-class="wikilink" alt="Pastedimage20260919144834.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919144834.png</figcaption>
-</figure>
+![Pastedimage20260919144834.png](imgs/b7ccafe408827bff84e3ce705fa50cfa755beea6.png)
 
 So, I decided to DM the bot the command: "/fingerprint" and it responded!
 
-<figure>
-<img
-src="imgs/68a3cb58cac6968a8e52d2577f0fbb0e5e7e2ee2.png"
-class="wikilink" alt="Pastedimage20260919144942.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919144942.png</figcaption>
-</figure>
+![Pastedimage20260919144942.png](imgs/68a3cb58cac6968a8e52d2577f0fbb0e5e7e2ee2.png)
 
 > "Clever, aren't you, finding me here --
 > a bot with no face, but I'm still near.
@@ -118,13 +94,7 @@ Sounds like what we are looking for is another account somewhere out there with 
 
 So, the first thing I did was...Check the CTF player list!... no dice! then the team list...nothing. so what's the next step? well, doxxing of course! lets cyber-stalk Mr. ferryman! and to do this, I will be using a website called: https://instantusername.com/. I originally tried to use the command line tool "Sherlock", but It turned up empty. so lets put ferryman_vt into the site!
 
-<figure>
-<img
-src="imgs/8175d18758fb3d7d5fbead1d92d588163c71c1eb.png"
-class="wikilink" alt="Pastedimage20260919145934.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919145934.png</figcaption>
-</figure>
+![Pastedimage20260919145934.png](imgs/8175d18758fb3d7d5fbead1d92d588163c71c1eb.png)
 
 > \[!NOTE\]
 > This is where the way *I* solved the CTF, and the *Intended* way to solve it diverge. so I will first show the intended way proceed, and at the end show you how *I* solved it.
@@ -137,13 +107,7 @@ we got two matches! Vimeo, and Instagram. Vimeo turned out to be a false-positiv
 
 there was one single post on the Instagram account:
 
-<figure>
-<img
-src="imgs/ba198980aa3e48c5f74151282acabd932dc3a886.png"
-class="wikilink" alt="Pastedimage20260919150505.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919150505.png</figcaption>
-</figure>
+![Pastedimage20260919150505.png](imgs/ba198980aa3e48c5f74151282acabd932dc3a886.png)
 
 > "Time moves quiet on a piece that's sold,
 > Only the patient hear the story told
@@ -177,38 +141,24 @@ well, the answer to that is closer than it seems!. this post is signed "-X". thi
 now, in all my sleep deprived 3am genius, I somehow managed to COMPLETELY MISS the Instagram account on my first solve. so Instead, I took a different route:
 
 when all I could find was a v-tuber's socials, I decided to go on every social media I could think of, and one by one search the name "ferryman_vt". Eventually, I managed to brute-force my way to this twitter account:
-<img
-src="imgs/bf9fbd3eb6b74e5bed87d241e8d386370ee02847.png"
-class="wikilink" alt="Pastedimage20260919153110.png" />
+
+![Pastedimage20260919153110.png](imgs/bf9fbd3eb6b74e5bed87d241e8d386370ee02847.png)
 
 I was really confused by this, and frankly I still am. why does it have a completely unique PFP and banner? but regardless. all that I could find, was its one, lone follower:
 
-<figure>
-<img
-src="imgs/6e82dabb42309adda1ae63e1a6f85a3e3d7ded54.png"
-class="wikilink" alt="Pastedimage20260919153226.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919153226.png</figcaption>
-</figure>
+![Pastedimage20260919153226.png](imgs/6e82dabb42309adda1ae63e1a6f85a3e3d7ded54.png)
 
 Now to be completely frank with you, I'm fairly sure this account is not part of the CTF, and is instead just another player. but, this account did have one interesting followed account:
 
-<img
-src="imgs/c9a8f1b83f59de2a30275bcaf250f859c3f0b0e7.png"
-class="wikilink" alt="Pastedimage20260919153416.png" />
-\#### Twitter (Still Not Calling It X)
+![Pastedimage20260919153416.png](imgs/c9a8f1b83f59de2a30275bcaf250f859c3f0b0e7.png)
+
+#### Twitter (Still Not Calling It X)
 
 sadly, the biggest loss of this entire CTF came to me in this stage...I was forced to make a twitter account :( But fear not! for it was worth it!
 
 if we search for an "@tockferr" on twitter, we get an account that was made the same day as the Instagram!
 
-<figure>
-<img
-src="imgs/a2f8af73121dfdfd141d7e18412a7cfd21ec0cbf.png"
-class="wikilink" alt="Pastedimage20260919151651.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919151651.png</figcaption>
-</figure>
+![Pastedimage20260919151651.png](imgs/a2f8af73121dfdfd141d7e18412a7cfd21ec0cbf.png)
 
 **"Thursday well spent 🕰️ (yes, I'm the same everywhere -- try harder)"**
 
@@ -222,23 +172,11 @@ aria-hidden="true">Pastedimage20260919151651.png</figcaption>
 
 before I began investigating the Tweets themselves, I noticed something else. one of these posts has a couple of comments. the first one was just a fellow player, but the second one caught my eye. the profile picture of the commenter was the same clock that was in the Instagram post, and its name was "*Geneva*", the same city that the bitcoin was stolen in!
 
-<figure>
-<img
-src="imgs/4683f1e7876d28b956f502cc853bb4f762d8d738.png"
-class="wikilink" alt="Pastedimage20260919152225.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919152225.png</figcaption>
-</figure>
+![Pastedimage20260919152225.png](imgs/4683f1e7876d28b956f502cc853bb4f762d8d738.png)
 
 On the account was a single post:
 
-<figure>
-<img
-src="imgs/5bd6f9200fee905e8ea5caa13f90d79de0a6eabd.png"
-class="wikilink" alt="Pastedimage20260919152301.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919152301.png</figcaption>
-</figure>
+![Pastedimage20260919152301.png](imgs/5bd6f9200fee905e8ea5caa13f90d79de0a6eabd.png)
 
 **"Ran into an old friend from the trade today. Still doesn't say much, but he never changes his profile. Everything's right there if you actually read it: https://tinyurl.com/vantage-job"**
 
@@ -253,28 +191,15 @@ but as I shut my eyes, the answer came to me! what if the strange string in the 
 I tried many different websites, Telegram, Discord, Pastebin, youtube, but none had a page with that as a slug. until I looked closer at the account, and remembered that it had used https://tinyurl.com for one of its hints! what if the answer is in https://tinyurl.com/38fw78xp?
 
 and it was like music to the eyes, here it was, the breakthrough I needed:
-<img
-src="imgs/42e695ba631429a980eeadb208c8648b60d53983.png"
-class="wikilink" alt="Pastedimage20260919153911.png" />
+![Pastedimage20260919153911.png](imgs/42e695ba631429a980eeadb208c8648b60d53983.png)
 
 Immediately, I could tell this was some sort of file, So I copied the whole thing, and threw it into CyberChef, and it gave me an image:
 
-<figure>
-<img
-src="imgs/bbabd1cb515694fa6155dbf213f4b91e626c98aa.jpg"
-class="wikilink" alt="download.jpg" />
-<figcaption aria-hidden="true">download.jpg</figcaption>
-</figure>
+![download.jpg](imgs/bbabd1cb515694fa6155dbf213f4b91e626c98aa.jpg)
 
 What's the first thing you do with a strange new image file in a CTF? you check the metadata! so I did and voila! it was finally here:
 
-<figure>
-<img
-src="imgs/c58c16cf75df4a19d052ad36816c4a6d878106a0.png"
-class="wikilink" alt="Pastedimage20260919154335.png" />
-<figcaption
-aria-hidden="true">Pastedimage20260919154335.png</figcaption>
-</figure>
+![Pastedimage20260919154335.png](imgs/c58c16cf75df4a19d052ad36816c4a6d878106a0.png)
 
 We got the flag!
 
